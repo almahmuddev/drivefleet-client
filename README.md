@@ -1,8 +1,8 @@
 # DriveFleet — Premium Car Rental Platform
 
-**Live Site:** [https://drivefleet.vercel.app](https://drivefleet.vercel.app)
+<!-- **Live Site:** [https://drivefleet.vercel.app](https://drivefleet.vercel.app) -->
 
-DriveFleet is a full-stack car rental platform where users can explore available vehicles, view car details, make bookings, and manage their listings — all with a modern, responsive interface.
+DriveFleet is a car rental platform where users can explore available vehicles, view car details, make bookings, and manage their listings — all with a modern, responsive interface.
 
 ---
 
@@ -35,45 +35,6 @@ DriveFleet is a full-stack car rental platform where users can explore available
 
 ---
 
-## Getting Started
-
-### Prerequisites
-- Node.js 18+
-- A Firebase project
-- A running instance of [drivefleet-server](https://github.com/your-username/drivefleet-server)
-
-### Installation
-
-```bash
-git clone https://github.com/your-username/drivefleet-client.git
-cd drivefleet-client
-npm install
-```
-
-### Environment Variables
-
-Create a `.env` file in the root (use `.env.example` as reference):
-
-```
-VITE_FIREBASE_API_KEY=...
-VITE_FIREBASE_AUTH_DOMAIN=...
-VITE_FIREBASE_PROJECT_ID=...
-VITE_FIREBASE_STORAGE_BUCKET=...
-VITE_FIREBASE_MESSAGING_SENDER_ID=...
-VITE_FIREBASE_APP_ID=...
-VITE_API_BASE_URL=http://localhost:5000
-```
-
-### Run Locally
-
-```bash
-npm run dev
-```
-
-App runs at `http://localhost:5173`
-
----
-
 ## Pages
 
 | Route | Access | Description |
@@ -88,5 +49,3 @@ App runs at `http://localhost:5173`
 | `/my-added-cars` | Private | Manage own car listings |
 
 ---
-
-*Built as part of Programming Hero Web Development Course — Assignment CAT_05*
