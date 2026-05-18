@@ -42,11 +42,11 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { Icon: RiFacebookCircleLine, label: "Facebook", href: "#" },
+  { Icon: RiFacebookCircleLine, label: "Facebook", href: "https://www.facebook.com/share/1AKXLBv3Gv/" },
   { Icon: XIcon, label: "X (Twitter)", href: "#" },
-  { Icon: RiInstagramLine, label: "Instagram", href: "#" },
-  { Icon: RiLinkedinBoxLine, label: "LinkedIn", href: "#" },
-  { Icon: RiYoutubeLine, label: "YouTube", href: "#" },
+  { Icon: RiInstagramLine, label: "Instagram", href: "https://www.instagram.com/almahmuddev/" },
+  { Icon: RiLinkedinBoxLine, label: "LinkedIn", href: "https://www.linkedin.com/in/almahmuddev/" },
+  // { Icon: RiYoutubeLine, label: "YouTube", href: "#" },
 ];
 
 const Footer = () => {
@@ -73,18 +73,18 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm font-body text-dark-400">
                 <RiMapPinLine className="text-brand-500 text-base flex-shrink-0" />
-                <span>123 Fleet Avenue, Dhaka 1200, Bangladesh</span>
+                <span>123 Eidgah Square, Sylhet 3100, Bangladesh</span>
               </div>
               <div className="flex items-center gap-3 text-sm font-body text-dark-400">
                 <RiPhoneLine className="text-brand-500 text-base flex-shrink-0" />
                 <a href="tel:+8801700000000" className="hover:text-brand-400 transition-colors">
-                  +880 1700-000000
+                  +880 1874-991984
                 </a>
               </div>
               <div className="flex items-center gap-3 text-sm font-body text-dark-400">
                 <RiMailLine className="text-brand-500 text-base flex-shrink-0" />
                 <a href="mailto:hello@drivefleet.io" className="hover:text-brand-400 transition-colors">
-                  hello@drivefleet.io
+                  devalmahmud@gmail.com
                 </a>
               </div>
             </div>
