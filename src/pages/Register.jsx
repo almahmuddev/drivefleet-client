@@ -17,8 +17,8 @@ import {
 
 // Password rules we check against
 const rules = [
-  { id: "upper",  label: "One uppercase letter",  test: (p) => /[A-Z]/.test(p) },
-  { id: "lower",  label: "One lowercase letter",  test: (p) => /[a-z]/.test(p) },
+  { id: "upper", label: "One uppercase letter", test: (p) => /[A-Z]/.test(p) },
+  { id: "lower", label: "One lowercase letter", test: (p) => /[a-z]/.test(p) },
   { id: "length", label: "At least 6 characters", test: (p) => p.length >= 6 },
 ];
 
@@ -26,12 +26,12 @@ const Register = () => {
   const { register, googleLogin } = useAuth();
   const navigate = useNavigate();
 
-  const [name, setName]       = useState("");
-  const [email, setEmail]     = useState("");
-  const [photo, setPhoto]     = useState("");
-  const [pass, setPass]       = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [photo, setPhoto] = useState("");
+  const [pass, setPass] = useState("");
   const [showPass, setShowPass] = useState(false);
-  const [busy, setBusy]       = useState(false);
+  const [busy, setBusy] = useState(false);
   const [touched, setTouched] = useState(false); // show rules 
 
   const passValid = rules.every((r) => r.test(pass));
@@ -201,11 +201,10 @@ const Register = () => {
               <div className="relative">
                 <input
                   type={showPass ? "text" : "password"}
-                  className={`input-field pr-11 ${
-                    touched && !passValid
+                  className={`input-field pr-11 ${touched && !passValid
                       ? "border-red-400 focus:ring-red-400"
                       : ""
-                  }`}
+                    }`}
                   placeholder="Create a password"
                   value={pass}
                   onChange={(e) => {
@@ -237,11 +236,10 @@ const Register = () => {
                     return (
                       <li
                         key={rule.id}
-                        className={`flex items-center gap-2 text-xs font-body transition-colors ${
-                          ok
+                        className={`flex items-center gap-2 text-xs font-body transition-colors ${ok
                             ? "text-green-600 dark:text-green-400"
                             : "text-red-500 dark:text-red-400"
-                        }`}
+                          }`}
                       >
                         {ok ? (
                           <RiCheckLine className="flex-shrink-0" />

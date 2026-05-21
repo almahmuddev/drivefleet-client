@@ -16,14 +16,14 @@ const AddCar = () => {
   const [busy, setBusy] = useState(false);
 
   const [form, setForm] = useState({
-    name:        "",
-    dailyPrice:  "",
-    type:        "Sedan",
-    image:       "",
-    seats:       "",
-    location:    "",
+    name: "",
+    dailyPrice: "",
+    type: "Sedan",
+    image: "",
+    seats: "",
+    location: "",
     description: "",
-    available:   true,
+    available: true,
   });
 
   const handleChange = (e) => {
@@ -40,12 +40,12 @@ const AddCar = () => {
     try {
       await api.post("/cars", {
         ...form,
-        dailyPrice:   Number(form.dailyPrice),
-        seats:        Number(form.seats),
-        ownerEmail:   user.email,
-        ownerName:    user.displayName,
+        dailyPrice: Number(form.dailyPrice),
+        seats: Number(form.seats),
+        ownerEmail: user.email,
+        ownerName: user.displayName,
         bookingCount: 0,
-        addedAt:      new Date(),
+        addedAt: new Date(),
       });
       toast.success("Car listed successfully!");
       navigate("/my-added-cars");
@@ -200,14 +200,12 @@ const AddCar = () => {
           <div className="flex items-center gap-3">
             <div
               onClick={() => setForm((p) => ({ ...p, available: !p.available }))}
-              className={`relative w-11 h-6 rounded-full cursor-pointer transition-colors duration-200 ${
-                form.available ? "bg-brand-500" : "bg-dark-300 dark:bg-dark-600"
-              }`}
+              className={`relative w-11 h-6 rounded-full cursor-pointer transition-colors duration-200 ${form.available ? "bg-brand-500" : "bg-dark-300 dark:bg-dark-600"
+                }`}
             >
               <div
-                className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-                  form.available ? "translate-x-5" : "translate-x-0.5"
-                }`}
+                className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${form.available ? "translate-x-5" : "translate-x-0.5"
+                  }`}
               />
             </div>
             <span className="font-body text-sm text-dark-700 dark:text-dark-300">

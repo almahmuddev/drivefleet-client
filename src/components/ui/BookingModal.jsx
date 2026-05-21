@@ -9,24 +9,24 @@ import api from "../../api";
 
 const BookingModal = ({ car, onClose }) => {
   const { user } = useAuth();
-  const [driver, setDriver]   = useState("no");
-  const [note, setNote]       = useState("");
-  const [busy, setBusy]       = useState(false);
+  const [driver, setDriver] = useState("no");
+  const [note, setNote] = useState("");
+  const [busy, setBusy] = useState(false);
 
   const handleBook = async () => {
     setBusy(true);
     try {
       await api.post("/bookings", {
-        carId:        car._id,
-        carName:      car.name,
-        carImage:     car.image,
-        dailyPrice:   car.dailyPrice,
-        totalPrice:   car.dailyPrice,
-        userEmail:    user.email,
-        userName:     user.displayName,
+        carId: car._id,
+        carName: car.name,
+        carImage: car.image,
+        dailyPrice: car.dailyPrice,
+        totalPrice: car.dailyPrice,
+        userEmail: user.email,
+        userName: user.displayName,
         driverNeeded: driver === "yes",
-        specialNote:  note.trim(),
-        bookedAt:     new Date(),
+        specialNote: note.trim(),
+        bookedAt: new Date(),
       });
 
       toast.success("Booking confirmed!");
@@ -108,11 +108,10 @@ const BookingModal = ({ car, onClose }) => {
                     key={val}
                     type="button"
                     onClick={() => setDriver(val)}
-                    className={`flex-1 py-2.5 rounded-lg border font-body text-sm font-medium transition-all ${
-                      driver === val
+                    className={`flex-1 py-2.5 rounded-lg border font-body text-sm font-medium transition-all ${driver === val
                         ? "border-brand-500 bg-brand-500 text-white"
                         : "border-dark-200 dark:border-dark-600 text-dark-600 dark:text-dark-300 hover:border-brand-400"
-                    }`}
+                      }`}
                   >
                     {val === "yes" ? "Yes, I need a driver" : "No, I will drive"}
                   </button>

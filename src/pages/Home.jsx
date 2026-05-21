@@ -90,7 +90,7 @@ const Home = () => {
 
         <div className="container-custom relative z-10 py-24">
           <div className="max-w-5xl">
-          {/* <div className="max-w-full"> */}
+            {/* <div className="max-w-full"> */}
             {/* small label */}
             <motion.div
               variants={fadeUp}

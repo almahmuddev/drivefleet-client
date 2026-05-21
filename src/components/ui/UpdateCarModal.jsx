@@ -10,12 +10,12 @@ const types = ["Sedan", "SUV", "Hatchback", "Luxury", "Convertible", "Pickup"];
 
 const UpdateCarModal = ({ car, onClose, onUpdated }) => {
   const [form, setForm] = useState({
-    dailyPrice:  car.dailyPrice,
+    dailyPrice: car.dailyPrice,
     description: car.description,
-    available:   car.available,
-    image:       car.image,
-    type:        car.type,
-    location:    car.location,
+    available: car.available,
+    image: car.image,
+    type: car.type,
+    location: car.location,
   });
   const [busy, setBusy] = useState(false);
 
@@ -150,14 +150,12 @@ const UpdateCarModal = ({ car, onClose, onUpdated }) => {
                 onClick={() =>
                   setForm((p) => ({ ...p, available: !p.available }))
                 }
-                className={`relative w-11 h-6 rounded-full cursor-pointer transition-colors duration-200 ${
-                  form.available ? "bg-brand-500" : "bg-dark-300 dark:bg-dark-600"
-                }`}
+                className={`relative w-11 h-6 rounded-full cursor-pointer transition-colors duration-200 ${form.available ? "bg-brand-500" : "bg-dark-300 dark:bg-dark-600"
+                  }`}
               >
                 <div
-                  className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${
-                    form.available ? "translate-x-5" : "translate-x-0.5"
-                  }`}
+                  className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-transform duration-200 ${form.available ? "translate-x-5" : "translate-x-0.5"
+                    }`}
                 />
               </div>
               <span className="font-body text-sm text-dark-700 dark:text-dark-300">

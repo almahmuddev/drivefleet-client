@@ -15,11 +15,11 @@ import DeleteConfirmModal from "../components/ui/DeleteConfirmModal";
 
 const MyAddedCars = () => {
   const { user } = useAuth();
-  const [cars, setCars]           = useState([]);
-  const [loading, setLoading]     = useState(true);
-  const [editCar, setEditCar]     = useState(null);   
-  const [deleteCar, setDeleteCar] = useState(null);   
-  const [deleting, setDeleting]   = useState(false);
+  const [cars, setCars] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [editCar, setEditCar] = useState(null);
+  const [deleteCar, setDeleteCar] = useState(null);
+  const [deleting, setDeleting] = useState(false);
 
   const loadCars = async () => {
     setLoading(true);

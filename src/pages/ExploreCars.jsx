@@ -9,10 +9,10 @@ import api from "../api";
 const types = ["All", "Sedan", "SUV", "Hatchback", "Luxury"];
 
 const ExploreCars = () => {
-  const [cars, setCars]       = useState([]);
+  const [cars, setCars] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [search, setSearch]   = useState("");
-  const [type, setType]       = useState("All");
+  const [search, setSearch] = useState("");
+  const [type, setType] = useState("All");
 
   const fetchCars = async () => {
     setLoading(true);

@@ -152,8 +152,8 @@ const CarDetails = () => {
               onClick={handleBookClick}
               disabled={!car.available}
               className={`w-full py-3.5 rounded-xl font-body font-semibold text-base transition-all ${car.available
-                  ? "btn-primary"
-                  : "bg-dark-100 dark:bg-dark-700 text-dark-400 cursor-not-allowed"
+                ? "btn-primary"
+                : "bg-dark-100 dark:bg-dark-700 text-dark-400 cursor-not-allowed"
                 }`}
             >
               {car.available ? "Book Now" : "Currently Unavailable"}
