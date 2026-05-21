@@ -89,7 +89,7 @@ const Home = () => {
         <div className="absolute bottom-1/4 left-1/3 w-64 h-64 bg-brand-500/5 rounded-full blur-2xl pointer-events-none" />
 
         <div className="container-custom relative z-10 py-24">
-          <div className="max-w-3xl">
+          <div className="max-w-5xl">
           {/* <div className="max-w-full"> */}
             {/* small label */}
             <motion.div
