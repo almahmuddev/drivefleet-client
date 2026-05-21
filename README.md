@@ -1,4 +1,4 @@
-# DriveFleet — Premium Car Rental Platform
+# DriveFleet — Car Rental Platform
 
 **Live Site:** [https://drivefleet-client-three.vercel.app](https://drivefleet-client-three.vercel.app)
 
@@ -9,11 +9,11 @@ DriveFleet is a car rental platform where users can explore available vehicles, 
 ## Features
 
 - **Browse & Search** — Explore the full fleet with search by car name and filter by car type (SUV, Sedan, Hatchback, Luxury, etc.)
-- **Secure Authentication** — Email/password and Google login powered by Firebase Auth, with JWT tokens stored in HTTPOnly cookies for maximum security
+- **Secure Authentication** — Email/password and Google login powered by Firebase Auth, with JWT tokens for maximum security
 - **Instant Booking** — Book any available car with a single click, add special notes, and choose whether a driver is needed
 - **Car Management** — Authenticated users can add, update, and delete their own car listings with full CRUD operations
 - **My Bookings Dashboard** — Track all bookings in one place, with booking date, total price, and car details
-- **Dark / Light Theme** — Toggle between dark and light mode with your preference persisted across sessions
+- **Dark / Light Theme** — switch between dark and light themes, with your preference automatically saved across sessions.
 - **Smooth Animations** — Framer Motion page transitions and micro-interactions throughout the UI
 
 ---
